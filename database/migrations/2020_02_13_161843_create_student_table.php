@@ -18,6 +18,7 @@ class CreateStudentTable extends Migration
             $table->string('name');
             $table->date('birthdate');
             $table->string('email')->uniqe();
+            $table->string('email')->uniqe();
             $table->timestamps();
         });
     }
