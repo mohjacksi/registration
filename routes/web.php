@@ -10,6 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function(){
+   return view('index');
+});
+Route::get('/table', function(){
+   return view('table');
+});
 Route::get('students', 'StudentController@index')->name('home');
 Route::get('students/create', 'StudentController@create');
 Route::post('students', 'StudentController@store')->name('student.store');
